@@ -122,10 +122,10 @@ function Works() {
     <section className="section works" id="works">
       <div className="container section-intro" data-reveal>
         <p className="section-kicker">Реальные работы</p>
-        <h2>Сначала смотрят посадку, потом фасады.</h2>
+        <h2>Сначала смотрят установку, потом фасады.</h2>
         <p>
           В галерее - свежие фото из открытого Instagram-профиля: кухни в потолок, подсветка, встроенная техника и
-          корпусная мебель для всей квартиры. Это не абстрактные рендеры, а реальные установки.
+          корпусная мебель для всей квартиры. 
         </p>
       </div>
 
@@ -133,7 +133,7 @@ function Works() {
         <div className="works-proof-lead">
           <strong>Instagram-архив работ</strong>
           <span>
-            Отобраны лучшие публичные кадры 2025-2026: без каталожного глянца, зато с реальными углами, посадкой и
+            Работы 2025-2026: без каталожного глянца, зато с реальными углами, посадкой и
             светом в готовых квартирах.
           </span>
           <a className="inline-proof-link" href={contacts.instagram} target="_blank" rel="noreferrer">
@@ -162,7 +162,7 @@ function Team() {
       <div className="container team-grid">
         <div className="team-copy" data-reveal>
           <p className="section-kicker">Саша и Наташа</p>
-          <h2>Не потоковый салон, а семейная команда, которая отвечает именами.</h2>
+          <h2>Не потоковый салон, а семейная команда, которая отвечает за качество.</h2>
           <p>
             Наташа ведет дизайн: планировка, фасады, техника, хранение и общий вид квартиры. Александр больше 10 лет
             собирает кухни сам и знает, где проект должен быть красивым, а где просто обязан быть точным.
@@ -225,7 +225,7 @@ function CalculatorSection() {
     const layoutValue = layoutOptions[layout];
     const counter = countertopOptions[countertop];
     const upperMultiplier = upperMode === 'ceiling' ? 1.2 : upperMode === 'high' ? 1.12 : 1;
-    const applianceExtra = appliances === 'none' ? 0 : appliances === 'base' ? 85000 : 180000;
+    const applianceExtra = appliances === 'none' ? 0 : appliances === 'base' ? 42500 : 90000;
     const raw = (fronts.rate * meters * layoutValue.multiplier + counter.rate * meters) * upperMultiplier + applianceExtra;
     return {
       low: roundTo(raw * 0.9, 10000),
@@ -265,7 +265,7 @@ function CalculatorSection() {
       <div className="container calc-grid">
         <div className="calc-copy" data-reveal>
           <p className="section-kicker">3D-расчет</p>
-          <h2>Соберите пример кухни и сразу увидьте порядок бюджета.</h2>
+          <h2>Соберите пример кухни и сразу определите порядок бюджета.</h2>
           <p>
             Калькулятор показывает ориентир для разговора. После замера Наташа уточнит материалы, технику и сложные узлы,
             а Александр проверит, как это реально встанет в вашей квартире.
@@ -399,7 +399,7 @@ function FAQ() {
       <div className="container faq-grid">
         <div className="faq-heading" data-reveal>
           <p className="section-kicker">Вопросы перед заявкой</p>
-          <h2>Главные возражения лучше снять до звонка.</h2>
+          <h2>Главные вопросы лучше закрыть до звонка.</h2>
         </div>
         <div className="faq-list">
           {faq.map((item) => (

@@ -102,7 +102,7 @@ export const process = [
   ['3D и смета', 'Показываем планировку, материалы и честную вилку стоимости.'],
   ['Договор', 'Фиксируем состав работ, сроки, материалы и порядок оплаты.'],
   ['Изготовление', 'Корпуса, фасады, столешницы и фурнитура идут в работу.'],
-  ['Сборка', 'Александр лично выводит кухню в аккуратную посадку на месте.'],
+  ['Сборка', 'Александр профессионально устанавливает кухню на объекте.'],
 ];
 
 export const faq = [
@@ -127,28 +127,28 @@ export const faq = [
 export const frontOptions = {
   chipboard: {
     label: 'ЛДСП',
-    rate: 55000,
+    rate: 27500,
     color: '#cfc7b4',
     accent: '#8c6a45',
     note: 'практичный старт',
   },
   matteMdf: {
     label: 'МДФ матовый',
-    rate: 76000,
+    rate: 38000,
     color: '#e7e2d8',
     accent: '#4f5f58',
     note: 'спокойный современный вид',
   },
   enamel: {
     label: 'МДФ эмаль',
-    rate: 94000,
+    rate: 47000,
     color: '#f4f4f1',
     accent: '#1f2526',
     note: 'ровные фасады премиальнее',
   },
   veneer: {
     label: 'шпон / массив',
-    rate: 125000,
+    rate: 62500,
     color: '#a86f3a',
     accent: '#37251a',
     note: 'теплая натуральная фактура',
@@ -162,7 +162,7 @@ export const layoutOptions = {
 };
 
 export const countertopOptions = {
-  laminate: { label: 'пластик HPL', rate: 9500 },
-  stone: { label: 'искусственный камень', rate: 23000 },
-  quartz: { label: 'кварц / компакт', rate: 34000 },
+  laminate: { label: 'пластик HPL', rate: 4750 },
+  stone: { label: 'искусственный камень', rate: 11500 },
+  quartz: { label: 'кварц / компакт', rate: 17000 },
 };
