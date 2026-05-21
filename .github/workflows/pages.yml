@@ -33,8 +33,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install quiz dependencies
+        run: npm ci --prefix mdv2
+
       - name: Build
         run: npm run build
+
+      - name: Build quiz landing
+        run: npm run build --prefix mdv2
+
+      - name: Add quiz landing to Pages artifact
+        run: |
+          mkdir -p dist/mdv2
+          cp -R mdv2/dist/. dist/mdv2/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
